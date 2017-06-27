@@ -15,7 +15,8 @@ def main():
 
     # validArgs are 'resolution','crop','model','crit_fr_asw', 'sowStart', or 'soilName'
     #factorials = {'soilName':['auto','HCGEN0001','HCGEN0003','HCGEN0007','HCGEN0010','HCGEN0011','HCGEN0013','HCGEN0014','HCGEN0015','HCGEN0016','HCGEN0017','HCGEN0025']}
-    factorials = {'sowStart':['auto']}
+    #factorials = {'sowStart':['auto']}
+    factorials = {'BAR':['10000','20000']}
     #factorials = {'crit_fr_asw':['0.0','0.05','0.15','0.25','0.50','0.75','0.95','1.0']}
 
     otherArgs = {'metFileDir':'C:/Users/Para2x/Dropbox/Hamze Dokoohaki/Projects/Large-scale APSIM Simulation/apsimRegions-Revised/Example-factorial/metfiles/%(met)s',\

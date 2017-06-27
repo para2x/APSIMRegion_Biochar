@@ -98,8 +98,8 @@ def setup_management_options(folder, crop, config, gridpoint, gridLut, shortcut,
     endDate = datetime.strptime(sowStart, '%d-%b') - DateOffset(2)
     endDate = datetime.strftime(endDate, '%d-%b')
     manager.end_crop_on_fixed_date_rule(folder, crop, endDate)
-    #Hamze added this and this adds the biochar module
-    manager.BiocharApplication_rule(folder)
+    #--------------------------------Hamze added this and this adds the biochar module
+    manager.BiocharApplication_rule(folder, AppDate=config.BAD, BAR=config.BAR)
 
     if crop == 'maize':
         # sowing rule
